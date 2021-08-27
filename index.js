@@ -46,7 +46,7 @@ db.set(id,enctext)
         } catch (err) {
 res.send(err)
         } finally {
-            res.redirect("https://scripthosting.herokuapp.com/s?id=" + id)
+            res.redirect("/s?id=" + id)
         }
     }
   })
