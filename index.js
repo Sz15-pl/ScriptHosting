@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 	limit: '2mb',
   extended: true
 })); 
-const { uuid } = require('uuid');
+const { uuid } = require('uuidv4');
 const dotenv = require('dotenv')
 .config({ path: __dirname + '/env/.env' })
  
@@ -28,7 +28,7 @@ function decrypt(cipherText, key, outputEncoding = "utf8") {
 
 
 
-const key = process.env.KEY
+const key = process.env['KeyAes']
 
 
 app.get('/', (req, res) => {
