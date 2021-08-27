@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 	limit: '2mb',
   extended: true
 })); 
-const { uuid } = require('uuidv4');
+const { uuid } = require('uuid');
 const dotenv = require('dotenv')
 .config({ path: __dirname + '/env/.env' })
  
